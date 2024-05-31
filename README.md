@@ -21,23 +21,6 @@ On se concentre ensuite sur l'ajustement des paramètres du modèle à des donn�
     * Simulation de l'impact d'une intervention réduisant le taux de transmission (β) sur la dynamique de l'épidémie. 
     * Comparaison des scénarios avec et sans intervention à l'aide de graphiques. 
 
-### Structure du code 
-
-Le code est organisé en plusieurs fichiers Python :
-
-* `modele_sird.py` : contient la définition du modèle SIRD et la fonction `euler` pour la simulation. ⚙️
-* `ajustement_parametres.py` : implémente les fonctions de lecture des données, de calcul du coût et la recherche par grille. 
-* `analyse_scenarios.py` : définit les fonctions de calcul de R0 et de comparaison des scénarios avec et sans intervention.  🆚
-* `principal.py` : script principal qui orchestre l'exécution des modules précédents et génère des visualisations. 
-
-### Instructions d'exécution 
-
-1. **Cloner le dépôt** : utilisez `git clone` pour cloner ce dépôt localement.
-2. **Installer les librairies requises** : exécutez `pip install numpy matplotlib pandas` dans votre terminal pour installer les librairies nécessaires.
-3. **Exécuter le script principal** : lancez le script `principal.py` avec Python.
-
-Le script générera des graphiques illustrant l'évolution de l'épidémie dans les scénarios avec et sans intervention. 
-
 ### Données 
 
 Le jeu de données simulé des cas d'infection est fourni dans le fichier `sird_dataset.csv`.
@@ -49,8 +32,6 @@ Ce projet permet d'explorer la modélisation des épidémies et l'impact des int
 ### Améliorations possibles 
 
 * Intégration de modèles épidémiologiques plus complexes. 
-* Prise en compte de l'hétérogénéité de la population et des structures des contacts. 
 * Utilisation de méthodes d'optimisation plus sophistiquées pour l'ajustement des paramètres. 
 * Analyse de sensibilité pour évaluer l'impact de l'incertitude sur les paramètres.  ⚖️
 
-Ce projet constitue une base solide pour une exploration plus approfondie de la modélisation mathématique des épidémies. 
